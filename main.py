@@ -1,4 +1,4 @@
-#parte para inicar el juego 
+#parte para inicar el juego
 import pygame as pg
 import sys
 from settings import *
@@ -17,7 +17,7 @@ class Game:
         pass
 
     def new(self):
-        
+
         self.all_sprites = pg.sprite.Group()
         self.walls = pg.sprite.Group()
         self.player = Player(self, 10, 10)
@@ -53,7 +53,7 @@ class Game:
         pg.display.flip()
 
     def events(self):
-        
+
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 self.quit()

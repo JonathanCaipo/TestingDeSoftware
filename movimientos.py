@@ -1,4 +1,4 @@
-#simulacion una parte 
+#simulacion una parte
 import pygame, random
 pygame.init()
 screen = pygame.display.set_mode([440,440])
@@ -42,7 +42,7 @@ class Head():
             self.location[1] += 20
         if self.direction == 3:
             self.location[0] -= 20
-            
+
         if head.location[0] < 0:
             head.location[0] = 420
         if head.location[0] > 420:
@@ -53,4 +53,3 @@ class Head():
             head.location[1] = 0
 
         return
-
